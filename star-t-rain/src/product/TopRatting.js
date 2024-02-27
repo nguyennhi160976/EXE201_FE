@@ -8,7 +8,7 @@ export default function TopRatting() {
                     <div class="flex flex-wrap -mx-4 -my-8">
                         <div class="py-8 px-4 lg:w-1/3">
                             <div class="h-full flex items-start justify-center items-center border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <div class="w-20 flex-shrink-0 flex flex-col text-center leading-none">
+                                <div class="w-1/3 flex-shrink-0 flex flex-col text-center leading-none">
                                     <img class="lg:h-40 md:h-36 w-30p object-cover object-center" src="https://i.ytimg.com/vi/A_o2qfaTgKs/maxresdefault.jpg" alt="blog" />
                                 </div>
                                 <div class="flex-grow pl-4 items-center">
@@ -25,7 +25,7 @@ export default function TopRatting() {
                         </div>
                         <div class="py-8 px-4 lg:w-1/3">
                             <div class="h-full flex items-start justify-center items-center border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <div class="w-20 flex-shrink-0 flex flex-col text-center leading-none">
+                                <div class="w-1/3 flex-shrink-0 flex flex-col text-center leading-none">
                                     <img class="lg:h-40 md:h-36 w-30p object-cover object-center" src="https://i.ytimg.com/vi/A_o2qfaTgKs/maxresdefault.jpg" alt="blog" />
                                 </div>
                                 <div class="flex-grow pl-4">
@@ -42,7 +42,7 @@ export default function TopRatting() {
                         </div>
                         <div class="py-8 px-4 lg:w-1/3">
                             <div class="h-full flex items-start justify-center items-center border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <div class="w-20 flex-shrink-0 flex flex-col text-center leading-none">
+                                <div class="w-1/3 flex-shrink-0 flex flex-col text-center leading-none">
                                     <img class="lg:h-40 md:h-36 w-30p object-cover object-center" src="https://i.ytimg.com/vi/A_o2qfaTgKs/maxresdefault.jpg" alt="blog" />
                                 </div>
                                 <div class="flex-grow pl-4">
@@ -63,7 +63,7 @@ export default function TopRatting() {
                     <div class="flex flex-wrap -mx-4 -my-8">
                         <div class="py-8 px-4 lg:w-1/3">
                             <div class="h-full flex items-start justify-center items-center border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <div class="w-20 flex-shrink-0 flex flex-col text-center leading-none">
+                                <div class="w-1/3 flex-shrink-0 flex flex-col text-center leading-none">
                                     <img class="lg:h-40 md:h-36 w-30p object-cover object-center" src="https://i.ytimg.com/vi/A_o2qfaTgKs/maxresdefault.jpg" alt="blog" />
                                 </div>
                                 <div class="flex-grow pl-4">
@@ -80,7 +80,7 @@ export default function TopRatting() {
                         </div>
                         <div class="py-8 px-4 lg:w-1/3">
                             <div class="h-full flex items-start justify-center items-center border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <div class="w-20 flex-shrink-0 flex flex-col text-center leading-none">
+                                <div class="w-1/3 flex-shrink-0 flex flex-col text-center leading-none">
                                     <img class="lg:h-40 md:h-36 w-30p object-cover object-center" src="https://i.ytimg.com/vi/A_o2qfaTgKs/maxresdefault.jpg" alt="blog" />
                                 </div>
                                 <div class="flex-grow pl-4">
@@ -97,7 +97,7 @@ export default function TopRatting() {
                         </div>
                         <div class="py-8 px-4 lg:w-1/3">
                             <div class="h-full flex items-start justify-center items-center border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
-                                <div class="w-20 flex-shrink-0 flex flex-col text-center leading-none">
+                                <div class="w-1/3 flex-shrink-0 flex flex-col text-center leading-none">
                                     <img class="lg:h-40 md:h-36 w-30p object-cover object-center" src="https://i.ytimg.com/vi/A_o2qfaTgKs/maxresdefault.jpg" alt="blog" />
                                 </div>
                                 <div class="flex-grow pl-4">

@@ -1,6 +1,26 @@
 import React from 'react'
 
 export default function ProductList() {
+    // console.log(orders);
+    // const [orderList, setOrderList] = useState([]);
+    // const baseURL = `https://localhost:7260/api/Orders`;
+    // const [deleteOrderId, setDeleteOrderId] = useState("");
+    // const { orderId } = useParams();
+    // const [open, setOpen] = useState(false);
+
+    // useEffect(() => {
+    //     fetch(baseURL)
+    //         .then((response) => {
+    //             if (!response.ok) {
+    //                 throw new Error(`HTTP Status: ${response.status}`);
+    //             }
+    //             return response.json();
+    //         })
+    //         .then((data) => {
+    //             setOrderList(data);
+    //         })
+    //         .catch((error) => console.log(error.message));
+    // }, []);
     return (
         <div>
             <section class="text-gray-600 body-font">

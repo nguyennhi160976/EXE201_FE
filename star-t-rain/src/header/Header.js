@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 export default function Header() {
     return (
-        <header class="text-black-600 body-font">
+        <header class="text-black-600 body-font mb-10">
             <div class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center">
                 <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                     <i class="fa-solid fa-house w-10 h-10 text-black p-3 rounded-full" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24">
@@ -14,7 +14,7 @@ export default function Header() {
                 </a>
 
                 <nav class="md:ml-auto flex flex-wrap items-center text-base justify-center">
-                    <a class="mr-5 hover:text-gray-900"><i class="fa-regular fa-user"></i></a>
+                    <Link to='/login' class="mr-5 hover:text-gray-900"><i class="fa-regular fa-user"></i></Link>
                     <Link to='/cart' class="mr-5 hover:text-gray-900"><i class="fa-solid fa-cart-shopping"></i></Link>
                 </nav>
 
@@ -25,11 +25,12 @@ export default function Header() {
 
             <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center border-t border-b border-black border-solid border border-2-0 border-r-0 border-l-0 px-4">
                 <Link to="/" class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">TRANG CHỦ</Link>
-                <Link to="/menu" class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">THỰC ĐƠN</Link>
-                <a class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">ĐƠN HÀNG</a>
-                <a class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">THÔNG TIN</a>
-                <a class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">TIN TỨC</a>
+                <Link to="/bun-bo-tho-da" class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">THỰC ĐƠN</Link>
+
+                <Link to="/restaurant" class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">THƯƠNG HIỆU</Link>
                 <Link to="/contact" class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">LIÊN HỆ</Link>
+                <Link to="/order" class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">ĐƠN HÀNG</Link>
+                <Link to="/userpofile" class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">THÔNG TIN</Link>
             </nav>
 
 

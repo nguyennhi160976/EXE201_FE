@@ -1,13 +1,55 @@
 import React from 'react'
+import { Link, useNavigate } from 'react-router-dom'
+const dataProduct = [
+    {
+        id: 1,
+        name: "Bùn Bò Tái Nạm",
+        rating: 1,
+        image:
+            "https://static.vinwonders.com/production/bun-bo-nha-trang-1.jpg",
+        price: "15.000",
+    },
+    {
+        id: 2,
+        name: "Bún Bò Tái Wangyu",
+        rating: 2,
+        image:
+            "https://img-global.cpcdn.com/recipes/020745ddc8e14bdd/680x482cq70/bun-bo-hu%E1%BA%BF-tai-n%E1%BA%A1m-recipe-main-photo.jpg",
+        price: "25.000",
+    },
+    {
+        id: 3,
+        name: "Bún Bò Tô Nhỏ",
+        rating: 3,
+        image:
+            "https://cdn3.ivivu.com/2022/09/bun-bo-hue-ivivu-3.jpg",
+        price: "25.000",
+    },
+    {
+        id: 4,
+        name: "Bún Bò Gân",
+        rating: 3,
+        image: "https://cdn3.ivivu.com/2022/09/bun-bo-hue-ivivu-2.jpg",
+        price: "25.000",
+    },
+];
 
-export default function Product() {
+export default function Product(data) {
+    const navigate = useNavigate()
+    const handleClick = () => {
+        console.log(data.name);
+        navigate("/prodetail", { state: data })
+    };
+
     return (
         <div>
             <section class="text-gray-600 body-font">
                 <div class="container px-5 py-10 mx-auto">
                     <div class="flex flex-wrap -m-4">
+
                         <div class="p-4 md:w-1/3">
-                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
+
+                            <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden" onClick={handleClick}>
                                 <img class="lg:h-48 md:h-36 w-30p object-cover object-center" src="https://i.ytimg.com/vi/A_o2qfaTgKs/maxresdefault.jpg" alt="blog" />
                                 <div class="p-6">
                                     <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">Bún bò tái nạm</h2>
@@ -27,6 +69,7 @@ export default function Product() {
                                 </div>
                             </div>
                         </div>
+
                         <div class="p-4 md:w-1/3">
                             <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                                 <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ytimg.com/vi/A_o2qfaTgKs/maxresdefault.jpg" alt="blog" />
