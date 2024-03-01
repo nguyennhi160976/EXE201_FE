@@ -73,7 +73,7 @@ export default function Register() {
                                 color: 'white',
                             }}
                         >
-                            Create Acctount
+                            Tạo tài khoản
                         </Button>
                         <div className='mt-7'>
                             <span>Bạn đã có tài khản?</span>

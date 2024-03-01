@@ -23,6 +23,12 @@ import UserProfile from './userprofile/UserProfile';
 import ManageOrder from './order/ManageOrder';
 import OrderSuccess from './order/OrderSuccess';
 import OrderCancel from './order/OrderCancel';
+import Dashboard from './admin/Dashboard';
+import OrderManagement from './admin/OrderManagement';
+import ProductManagement from './admin/ProductManagement';
+import UserManagement from './admin/UserManagement';
+import OrderDetail from './order/OrderDetail';
+import EditProduct from './product/EditProduct';
 
 function App() {
   return (
@@ -53,6 +59,12 @@ function App() {
         </Route>
         <Route path='/restaurantdetail' element={<RestaurantDetail />}></Route>
         <Route path='/userpofile' element={<UserProfile />}></Route>
+        <Route path='/dashboard' element={<Dashboard />}></Route>
+        <Route path='/ordermanagement' element={<OrderManagement />}></Route>
+        <Route path='/productmanagement' element={<ProductManagement />}></Route>
+        <Route path='/editproduct' element={<EditProduct></EditProduct>}></Route>
+        <Route path='/usermanagement' element={<UserManagement />}></Route>
+        <Route path='/orderdetail' element={<OrderDetail />}></Route>
       </Routes>
       <Footer />
     </>

@@ -1,14 +1,9 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-export default function ManageOrder() {
+export default function OrderDetail() {
     return (
         <div>
-            <nav class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center mb-5 px-4">
-                <Link to="/manageorder" class="mr-16 font-normal active active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">Tất cả</Link>
-                <Link to="success" class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">Thành Công</Link>
-                <Link to="cancel" class="mr-16 font-normal active:text-4C8787 active:border-4C8787 active:border-solid active:border-1px">Đã Hủy</Link>
-            </nav>
             <section class="text-gray-600 body-font overflow-hidden">
 
                 <div class="container px-5 py-5 mx-auto border-2 border-opacity-60 border-gray-200 rounded-lg">
@@ -73,7 +68,18 @@ export default function ManageOrder() {
 
                         </div>
                     </div>
+                    <Link to="/ordermanagement">
+                        <button class="mt-5 inline-flex items-center px-4 py-2 bg-4C8787 hover:bg-4C8787 text-white text-sm font-medium rounded-md">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 10h10a8 8 0 018 8v2M3 10l6 6m-6-6l6-6" />
+                            </svg>
+
+                            Quay lại
+                        </button>
+                    </Link>
                 </div>
+
+
             </section>
         </div>
     )

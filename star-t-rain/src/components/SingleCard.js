@@ -10,7 +10,7 @@ export default function SingleProduct({ data }) {
   const navigate = useNavigate()
   const handleClick = () => {
     console.log(data.name);
-    navigate("/chi-tiet", {state:data})
+    navigate("/prodetail", { state: data })
   };
 
 
@@ -30,7 +30,7 @@ export default function SingleProduct({ data }) {
           <Rating
             name="read-only"
             value={3}
-            // onChange={handleRatingChange}
+          // onChange={handleRatingChange}
           />
         </Box>
         <Typography variant="h6" sx={{ fontWeight: 700 }} align="left">
