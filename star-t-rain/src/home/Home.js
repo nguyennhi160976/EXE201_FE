@@ -4,6 +4,7 @@ import Product from '../product/Product'
 import Slides from '../swiper/Slides'
 import HomeBanner from '../banner/HomeBanner'
 import TopRatting from '../product/TopRatting'
+import ProductList from '../product/ProductList'
 
 export default function Home() {
 
@@ -22,7 +23,7 @@ export default function Home() {
 
             </header>
             <Slides />
-            <Product />
+            <ProductList />
             <HomeBanner />
             <h2 class="sm:text-3xl text-2xl font-bold title-font mb-2 text-gray-900 pt-10 ml-10">ĐÁNH GIÁ CAO</h2>
             <TopRatting />

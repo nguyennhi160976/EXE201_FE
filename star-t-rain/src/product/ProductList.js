@@ -3,7 +3,10 @@ import React, { useEffect, useState } from 'react'
 export default function ProductList(products) {
     console.log(products);
     const [productList, setProductList] = useState([]);
-    const baseURL = `https://localhost:7096/api/Products`;
+    const [restaurantDetails, setRestaurantDetails] = useState({});
+
+    const baseURL = 'https://localhost:7096/api/Products';
+    const restaurantAPI = 'https://localhost:7096/api/Restaurants';
 
     useEffect(() => {
         fetch(baseURL)
@@ -15,9 +18,24 @@ export default function ProductList(products) {
             })
             .then((data) => {
                 setProductList(data);
+                // Extract unique restaurantIds from products
+                const uniqueRestaurantIds = Array.from(new Set(data.map((product) => product.restaurantId)));
+                // Fetch restaurant details for each unique restaurantId
+                Promise.all(
+                    uniqueRestaurantIds.map((restaurantId) => fetch(`${restaurantAPI}/${restaurantId}`).then((response) => response.json()))
+                )
+                    .then((restaurantData) => {
+                        // Create a mapping of restaurantId to restaurantName
+                        const restaurantMap = restaurantData.reduce((acc, restaurant) => {
+                            acc[restaurant.restaurantId] = restaurant.restaurantName;
+                            return acc;
+                        }, {});
+                        setRestaurantDetails(restaurantMap);
+                    })
+                    .catch((error) => console.error('Error fetching restaurant details:', error));
             })
             .catch((error) => console.log(error.message));
-    }, []);
+    }, [baseURL, restaurantAPI]);
     return (
         <div>
             <section class="text-gray-600 body-font">
@@ -30,7 +48,7 @@ export default function ProductList(products) {
                                     <img class="lg:h-48 md:h-36 w-full object-cover object-center" src="https://i.ytimg.com/vi/A_o2qfaTgKs/maxresdefault.jpg" alt="blog" />
                                     <div class="p-6">
                                         <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{data.productName}</h2>
-                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3">Quan abc</h1>
+                                        <h1 class="title-font text-lg font-medium text-gray-900 mb-3"> {restaurantDetails[data.restaurantId]}</h1>
                                         <p class="leading-relaxed mb-3">{data.price}</p>
 
                                         <a class="text-gray-400 items-center leading-relaxed text-sm ">Đánh giá
